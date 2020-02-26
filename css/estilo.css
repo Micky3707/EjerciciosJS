@@ -1,0 +1,11 @@
+.Titulo{
+	text-align: center;
+	font-size: 5vw;
+}
+.TextoTitulo:hover{
+	color: #9BC53D;
+}
+table{
+	background-color: #DD5560;
+	border: 2px solid rgb(101,105,66);
+}

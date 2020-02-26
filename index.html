@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicios de JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<script src = "js/script.js"></script>
+	<div class = "Titulo">
+		<H3 class = "TextoTitulo">EJERCICIOS DE JAVASCRIPT</H3>
+		<img src="img/BC.png">
+	</div>
+	<form name = "Ejercicio1" method = "post">
+		<table border = "1">
+			<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Introduce La Cantidad a Invertir: 
+				</td>
+				<td>
+					<input maxlength = "10" type="text" name="cantidad" onkeypress = "return validarn(event)">
+				</td>
+			</tr>
+				<td>
+					<input type="button" name="enviar" value="Calcular el interes" onclick="interes()">
+				</td>
+			<tr>
+			</tr>
+			<tr>
+				<td>
+					Su interes generado del 8.90% anual es de:
+				</td>
+				<td>
+					<input type="text" id="interesi" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Su inversion total es de:
+				</td>
+				<td>
+					<input type="text" name="sueldo" id = "suwldo1" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<form name = "Ejercicio2">
+		<table border = "1">
+			<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Introduce el sueldo base: 
+				</td>
+				<td>
+					<input maxlength = "10" type="text" name="SueldoBase" onkeypress = "return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Introduce el valor de la venta 1:
+				</td>
+				<td>
+					<input maxlength = "10" type="text" name="V1" onkeypress = "return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Introduce el valor de la venta 2:
+				</td>
+				<td>
+					<input maxlength = "10" type="text" name="V2" onkeypress = "return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Introduce el valor de la venta 3:
+				</td>
+				<td>
+					<input maxlength = "10" type="text" name="V3" onkeypress = "return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Su comision por las tres ventas sera de:
+				</td>
+				<td>
+					<input type="text" name="Comisiones" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Su sueldo Total sera de:
+				</td>
+				<td>
+					<input type="text" name="SueldoTotalis" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="ChecarE2" value = "CALCULAR" onclick="calcularSueldo()">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<form name = "Ejercicio3">
+		<table border = "1">
+			<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Ingrese el valor de su Compra:
+				</td>
+				<td>
+					<input maxlength = "10" type="text" name="Valor" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					El Total por su compra sera de: 
+				</td>
+				<td>
+					<input type="text" name="TotalCompra" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="Ejer3" value = "Calcular" onclick="totalCompra()">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<form name = "Ejercicio4">
+		<table border = "1">
+			<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Cual es la calificacion del primer Parcial:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Calif1" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es la calificacion del segundo Parcial:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Calif2" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es la calificacion del tercer Parcial:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Calif3" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es la calificacion del Examen Final:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="EF" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es la calificacion del Trabajo Final:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="TF" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Total:
+				</td>
+				<td>
+					<input type="text" name="TotalCalificacionUwU" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="Ejer4" value = "Calcular" onclick="calificacionTotal()">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<form name = "Ejercicio5">
+		<table border = "1">
+			<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Cual es el numero de Hombres en el salon?:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Hombres" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es el numero de Mujeres en el salon?:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Mujeres" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					El porcentaje de Hombres es de:
+				</td>
+				<td>
+					<input type="text" name="PHombres" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					El porcentaje de Mujeres es de:
+				</td>
+				<td>
+					<input type="text" name="PMujeres" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="Ejer5" value = "Calcular" onclick="PHM()">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<form name = "Ejercicio6">
+		<table border = "1">
+			<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Cual es su dia de nacimiento?:
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Dia" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es su mes de nacimiento? (En numero):
+				</td>
+				<td>
+					<input maxlength = "2" type="text" name="Mes" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cual es su año de nacimiento?:
+				</td>
+				<td>
+					<input maxlength = "4" type="text" name="Ano" onkeypress="return validarn(event)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Su edad es de:
+				</td>
+				<td>
+					<input type="text" name="Edad" class = "input-text" readonly="readonly">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="Ejer6" value = "Calcular" onclick="edad()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
