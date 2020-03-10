@@ -1,11 +1,88 @@
-.Titulo{
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #FFFFFF;
+}
+.Problema_1{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.Problema_2{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.Problema_3{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.Problema_4{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+header{
+	height: 100px;
+	border: 4px;
+	margin: 0;
+	background-color: #8ac6d1;
+}
+nav ul{
+	padding-top: 1rem;
+	list-style-type: none;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li{
+	padding-top: 1rem;
+	float: right;
+	font-size: 15px;
+	border-radius: 2px solid ;
+}
+nav ul li a{
+	padding-top: 1rem;
+	display: block;
+	padding: 3px;
+	color: black;
+	text-decoration: none;
+}
+nav ul li:hover{
+	padding-top: 1rem;
+	background: #bbded6;
+}
+h1{
 	text-align: center;
-	font-size: 5vw;
+	padding-bottom: 1rem;
 }
-.TextoTitulo:hover{
-	color: #9BC53D;
+
+#tabla1{
+	margin: auto;
 }
-table{
-	background-color: #DD5560;
-	border: 2px solid rgb(101,105,66);
+#tabla2{
+	margin: auto;
+}
+#tabla3{
+	margin: auto;
+}
+#tabla4{
+	margin: auto;
+}
+.presentacion{
+	text-align: center;
+}
+.TEMPOREX{
+	height: 240px;
+	width: 240px;
+}
+.Chikito{
+	font-size: 1vw;
+}
+.Titulo{
+	font-size: 5rem;
+}
+.Titulo:hover{
+	font-size: 5rem;
+	color: #DBFF76;
 }

@@ -2,352 +2,136 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Ejercicios de JavaScript</title>
+	<title>Estructuras Algoritmicas</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
-<body>
-	<script src = "js/script.js"></script>
-	<div class = "Titulo">
-		<H3 class = "TextoTitulo">EJERCICIOS DE JAVASCRIPT</H3>
-		<img src="img/BC.png">
-	</div>
-	<form name = "Ejercicio1" method = "post">
-		<table border = "1">
-			<tr>
-				<th>
-					Capital
-				</th>
-				<th>
-					Monto
-				</th>
-			</tr>
-			<tr>
-				<td>
-					Introduce La Cantidad a Invertir: 
-				</td>
-				<td>
-					<input maxlength = "10" type="text" name="cantidad" onkeypress = "return validarn(event)">
-				</td>
-			</tr>
-				<td>
-					<input type="button" name="enviar" value="Calcular el interes" onclick="interes()">
-				</td>
-			<tr>
-			</tr>
-			<tr>
-				<td>
-					Su interes generado del 8.90% anual es de:
-				</td>
-				<td>
-					<input type="text" id="interesi" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Su inversion total es de:
-				</td>
-				<td>
-					<input type="text" name="sueldo" id = "suwldo1" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-		</table>
-	</form>
-
-
-	<br>
-	<br>
-	<br>
-	<br>
-
-
-	<form name = "Ejercicio2">
-		<table border = "1">
-			<tr>
-				<th>
-					Capital
-				</th>
-				<th>
-					Monto
-				</th>
-			</tr>
-			<tr>
-				<td>
-					Introduce el sueldo base: 
-				</td>
-				<td>
-					<input maxlength = "10" type="text" name="SueldoBase" onkeypress = "return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Introduce el valor de la venta 1:
-				</td>
-				<td>
-					<input maxlength = "10" type="text" name="V1" onkeypress = "return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Introduce el valor de la venta 2:
-				</td>
-				<td>
-					<input maxlength = "10" type="text" name="V2" onkeypress = "return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Introduce el valor de la venta 3:
-				</td>
-				<td>
-					<input maxlength = "10" type="text" name="V3" onkeypress = "return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Su comision por las tres ventas sera de:
-				</td>
-				<td>
-					<input type="text" name="Comisiones" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Su sueldo Total sera de:
-				</td>
-				<td>
-					<input type="text" name="SueldoTotalis" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="button" name="ChecarE2" value = "CALCULAR" onclick="calcularSueldo()">
-				</td>
-			</tr>
-		</table>
-	</form>
-	
-
-	<br>
-	<br>
-	<br>
-	<br>
-
-
-	<form name = "Ejercicio3">
-		<table border = "1">
-			<tr>
-				<th>
-					Capital
-				</th>
-				<th>
-					Monto
-				</th>
-			</tr>
-			<tr>
-				<td>
-					Ingrese el valor de su Compra:
-				</td>
-				<td>
-					<input maxlength = "10" type="text" name="Valor" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					El Total por su compra sera de: 
-				</td>
-				<td>
-					<input type="text" name="TotalCompra" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="button" name="Ejer3" value = "Calcular" onclick="totalCompra()">
-				</td>
-			</tr>
-		</table>
-	</form>
-	
-
-	<br>
-	<br>
-	<br>
-	<br>
-
-
-	<form name = "Ejercicio4">
-		<table border = "1">
-			<tr>
-				<th>
-					Capital
-				</th>
-				<th>
-					Monto
-				</th>
-			</tr>
-			<tr>
-				<td>
-					Cual es la calificacion del primer Parcial:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Calif1" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es la calificacion del segundo Parcial:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Calif2" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es la calificacion del tercer Parcial:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Calif3" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es la calificacion del Examen Final:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="EF" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es la calificacion del Trabajo Final:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="TF" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Total:
-				</td>
-				<td>
-					<input type="text" name="TotalCalificacionUwU" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="button" name="Ejer4" value = "Calcular" onclick="calificacionTotal()">
-				</td>
-			</tr>
-		</table>
-	</form>
-	
-	<br>
-	<br>
-	<br>
-	<br>
-
-	<form name = "Ejercicio5">
-		<table border = "1">
-			<tr>
-				<th>
-					Capital
-				</th>
-				<th>
-					Monto
-				</th>
-			</tr>
-			<tr>
-				<td>
-					Cual es el numero de Hombres en el salon?:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Hombres" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es el numero de Mujeres en el salon?:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Mujeres" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					El porcentaje de Hombres es de:
-				</td>
-				<td>
-					<input type="text" name="PHombres" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					El porcentaje de Mujeres es de:
-				</td>
-				<td>
-					<input type="text" name="PMujeres" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="button" name="Ejer5" value = "Calcular" onclick="PHM()">
-				</td>
-			</tr>
-		</table>
-	</form>
-
-	<br>
-	<br>
-	<br>
-	<br>
-
-	<form name = "Ejercicio6">
-		<table border = "1">
-			<tr>
-				<th>
-					Capital
-				</th>
-				<th>
-					Monto
-				</th>
-			</tr>
-			<tr>
-				<td>
-					Cual es su dia de nacimiento?:
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Dia" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es su mes de nacimiento? (En numero):
-				</td>
-				<td>
-					<input maxlength = "2" type="text" name="Mes" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Cual es su año de nacimiento?:
-				</td>
-				<td>
-					<input maxlength = "4" type="text" name="Ano" onkeypress="return validarn(event)">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Su edad es de:
-				</td>
-				<td>
-					<input type="text" name="Edad" class = "input-text" readonly="readonly">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="button" name="Ejer6" value = "Calcular" onclick="edad()">
-				</td>
-			</tr>
-		</table>
-	</form>
+<body onpaste="return false" ondrag = "return false" ondrop="return false">
+	<script src="js/funciones.js"></script>
+	<section class = "presentacion">
+		<h1 class = "Titulo">
+			Ejercicios de JavaScript
+		</h1>
+		<h2 class = "Chikito">
+			Imagen de un album que me gusta ps pq es mi programa y quiero y puedo lol
+		</h2>
+		<img class = "TEMPOREX" src="img/TEMPOREX.jpg">
+	</section>
+	<section class = "Problema_1">
+		<a name="P1"></a>
+		<h1>Problema 1</h1>
+		<form name = "Formulario1" method="post">
+			<table border = "1" id="tabla1">
+				<tr>
+					<td>Ingrese el primer numero: </td>
+					<td><input maxlength="15" type="text" name="num1" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Ingrese el segundo numero: </td>
+					<td><input maxlength="15" type="text" name="num2"
+						onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="operacion" value="CALCULAR" onclick="operaciones()"></td>
+					<td></td>
+				</tr>
+				<tr>
+				<td>La operacion que se realizo fue: </td>
+				<td><input type="text" id="oper" class="input_text" readonly="readonly"></td>	
+				</tr>
+				<tr>
+					<td>El resultado es: </td>
+					<td><input type="text" id="resul" class="input_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<section class="Problema_2">
+		<a name="P2"></a>
+		<h1>Problema 2</h1>
+		<form name="Formulario2" method="post">
+			<table border = "1" id="tabla2">
+				<tr>
+					<td>Ingrese el primer numero: </td>
+					<td><input maxlength="15" type="text" name="num1" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Ingrese el segundo numero: </td>
+					<td><input maxlength="15" type="text" name="num2" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Ingrese el tercer numero: </td>
+					<td><input maxlength="15" type="text" name="num3" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="comparacion" value="CALCULAR" onclick="compararn()"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>El numero mayor es: </td>
+					<td><input type="text" id="mayor" class="input_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>	
+	<section class="Problema_3">
+		<a name="P3"></a>
+		<h1>Problema 3</h1>
+		<form name="Formulario3" method="post">
+			<table border = "1" id="tabla3">
+				<tr>
+					<td>Sueldo base por hora: </td>
+					<td><input maxlength="5" type="text" name="sueldob" onkeypress="return validarnd(event)"></td>
+				</tr>
+				<tr>
+					<td>Total de horas trabajadas en la semana: </td>
+					<td><input maxlength="2" type="text" name="horas" onkeypress="return validarne(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="calcular" value="CALCULAR" onclick="pago()"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Pago por horas normales: </td>
+					<td><input type="text" id="horasn" class="input_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Pago por horas extras: </td>
+					<td><input type="text" id="horase" class="input_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Total: </td>
+					<td><input type="text" id="total" class="input_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<section class="Problema_4">
+		<a name="P4"></a>
+		<h1>Problema 4</h1>
+		<form name="Formulario4" method="post">
+			<table border = "1" id="tabla4">
+				<tr>
+					<td>Sueldo mensual: </td>
+					<td><input maxlength="6" type="text" name="sueldom" onkeypress="return validarnd(event)"></td>
+				</tr>
+				<tr>
+					<td>Tiempo en la empresa en años: </td>
+					<td><input maxlength="2" type="text" name="tiempo" onkeypress="return validarnd(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="util" value="CALCULAR" onclick="utilidad()"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Su utildad es del: </td>
+					<td><input type="text" id="utip" class="input_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Utilidad: </td>
+					<td><input type="text" id="uti" class="input_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
 </body>
 </html>
